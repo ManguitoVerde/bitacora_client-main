@@ -1,7 +1,14 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {  
+    navigate('/bitacora');  // Redirige a la página de bitácora
+  };
+
   return (
     <div className="login-container">
       <div className="login-image">
@@ -20,13 +27,13 @@ const Login = () => {
           </div>
           <a href="#" className="forgot-password">Olvidar contraseña?</a>
           <div className="button-container">
-            <button type="button" className="login-btn" onClick={() => window.location.href = './InicioBitacora.html'}>Ingresar</button>
-            <button type="button" className="login-btn" onClick={() => window.location.href = './FormularioRegistro.html'}>Registrarse</button>
+            <button type="button" className="login-btn">Ingresar</button>
+            <button type="button" className="login-btn">Registrarse</button>
           </div>
         </form>
       </div>
     </div>
   );
-}
+};
 
 export default Login;

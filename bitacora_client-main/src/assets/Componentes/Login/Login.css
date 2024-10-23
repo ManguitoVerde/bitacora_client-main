@@ -22,7 +22,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('../IMG/fondo.jpg');
+    background-image: url('/bitacora_client-main/IMG/fondo.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
